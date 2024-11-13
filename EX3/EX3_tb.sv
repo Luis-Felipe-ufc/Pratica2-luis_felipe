@@ -9,8 +9,7 @@ module EX3_tb;
   LUT2 #(.INIT(4'b1000)) AND2_3(.I0(a), .I1(c), .O(O3));
   LUT3 #(.INIT(8'b11111110)) OR3_1(.I0(O1), .I1(O2), .I2(O3), .O(Cout));
   
-  
- initial begin
+   initial begin
   integer i;
    for (i = 0; i < 8; i = i + 1) begin
     {a, b, c} = i;  
